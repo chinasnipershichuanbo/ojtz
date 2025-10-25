@@ -1,0 +1,1069 @@
+[
+  {
+    "name": "Codeforces",
+    "url": "https://codeforces.com",
+    "country": "Global",
+    "type": "contest platform",
+    "tags": [
+      "contests",
+      "community"
+    ]
+  },
+  {
+    "name": "AtCoder",
+    "url": "https://atcoder.jp",
+    "country": "Japan",
+    "type": "contest platform",
+    "tags": [
+      "contests",
+      "icpc"
+    ]
+  },
+  {
+    "name": "SPOJ",
+    "url": "https://www.spoj.com",
+    "country": "Global",
+    "type": "online judge",
+    "tags": [
+      "problems",
+      "archives"
+    ]
+  },
+  {
+    "name": "UVa Online Judge",
+    "url": "https://onlinejudge.org",
+    "country": "Global",
+    "type": "archive",
+    "tags": [
+      "problems",
+      "archive"
+    ]
+  },
+  {
+    "name": "POJ (Peking University OJ)",
+    "url": "http://poj.org",
+    "country": "China",
+    "type": "university oj",
+    "tags": [
+      "archive",
+      "training"
+    ]
+  },
+  {
+    "name": "HDU OJ",
+    "url": "https://acm.hdu.edu.cn",
+    "country": "China",
+    "type": "university oj",
+    "tags": [
+      "training",
+      "cn"
+    ]
+  },
+  {
+    "name": "Luogu (洛谷)",
+    "url": "https://www.luogu.com.cn",
+    "country": "China",
+    "type": "training",
+    "tags": [
+      "cn",
+      "training"
+    ]
+  },
+  {
+    "name": "NowCoder (牛客网)",
+    "url": "https://www.nowcoder.com",
+    "country": "China",
+    "type": "interview/practice",
+    "tags": [
+      "cn",
+      "interview"
+    ]
+  },
+  {
+    "name": "CodeChef",
+    "url": "https://www.codechef.com",
+    "country": "India",
+    "type": "contest platform",
+    "tags": [
+      "contests",
+      "practice"
+    ]
+  },
+  {
+    "name": "HackerRank",
+    "url": "https://www.hackerrank.com",
+    "country": "Global",
+    "type": "practice/interview",
+    "tags": [
+      "interview",
+      "practice"
+    ]
+  },
+  {
+    "name": "HackerEarth",
+    "url": "https://www.hackerearth.com",
+    "country": "Global",
+    "type": "practice/interview",
+    "tags": [
+      "interview",
+      "contests"
+    ]
+  },
+  {
+    "name": "LeetCode",
+    "url": "https://leetcode.com",
+    "country": "Global",
+    "type": "interview/practice",
+    "tags": [
+      "interview",
+      "problems"
+    ]
+  },
+  {
+    "name": "Kattis",
+    "url": "https://open.kattis.com",
+    "country": "Global",
+    "type": "contest platform",
+    "tags": [
+      "contest",
+      "acm-icpc"
+    ]
+  },
+  {
+    "name": "TopCoder",
+    "url": "https://www.topcoder.com",
+    "country": "Global",
+    "type": "challenge platform",
+    "tags": [
+      "marathon",
+      "srms"
+    ]
+  },
+  {
+    "name": "Kaggle (ML competitions)",
+    "url": "https://www.kaggle.com",
+    "country": "Global",
+    "type": "data science",
+    "tags": [
+      "ml",
+      "competitions"
+    ]
+  },
+  {
+    "name": "Codewars",
+    "url": "https://www.codewars.com",
+    "country": "Global",
+    "type": "kata platform",
+    "tags": [
+      "kata",
+      "practice"
+    ]
+  },
+  {
+    "name": "Codingame",
+    "url": "https://www.codingame.com",
+    "country": "Global",
+    "type": "game-based",
+    "tags": [
+      "games",
+      "contests"
+    ]
+  },
+  {
+    "name": "Project Euler",
+    "url": "https://projecteuler.net",
+    "country": "Global",
+    "type": "math puzzles",
+    "tags": [
+      "math",
+      "puzzles"
+    ]
+  },
+  {
+    "name": "CSES",
+    "url": "https://cses.fi",
+    "country": "Finland",
+    "type": "problem set",
+    "tags": [
+      "training",
+      "algorithms"
+    ]
+  },
+  {
+    "name": "CS Academy",
+    "url": "https://csacademy.com",
+    "country": "Global",
+    "type": "contest platform",
+    "tags": [
+      "contests"
+    ]
+  },
+  {
+    "name": "Beecrowd (formerly URI)",
+    "url": "https://www.beecrowd.com.br",
+    "country": "Brazil",
+    "type": "online judge",
+    "tags": [
+      "archive"
+    ]
+  },
+  {
+    "name": "Timus Online Judge",
+    "url": "https://acm.timus.ru",
+    "country": "Russia",
+    "type": "online judge",
+    "tags": [
+      "archive"
+    ]
+  },
+  {
+    "name": "LightOJ",
+    "url": "https://lightoj.com",
+    "country": "Global",
+    "type": "online judge",
+    "tags": [
+      "archive"
+    ]
+  },
+  {
+    "name": "Sgu Online Judge",
+    "url": "https://www.sgu.ru",
+    "country": "Russia",
+    "type": "archive",
+    "tags": [
+      "archive"
+    ]
+  },
+  {
+    "name": "E-olymp",
+    "url": "https://www.e-olymp.com",
+    "country": "Ukraine",
+    "type": "online judge",
+    "tags": [
+      "training"
+    ]
+  },
+  {
+    "name": "UVa Live Archive (ICPC Live Archive mirror)",
+    "url": "https://onlinejudge.org/index.php?option=onlinejudge&page=livearchive",
+    "country": "Global",
+    "type": "archive",
+    "tags": [
+      "livearchive"
+    ]
+  },
+  {
+    "name": "USACO",
+    "url": "http://www.usaco.org",
+    "country": "USA",
+    "type": "training",
+    "tags": [
+      "usaco",
+      "training"
+    ]
+  },
+  {
+    "name": "Rosalind (bioinformatics)",
+    "url": "http://rosalind.info",
+    "country": "Global",
+    "type": "bioinformatics",
+    "tags": [
+      "bioinformatics"
+    ]
+  },
+  {
+    "name": "SPOJ Poland (pl.spoj.com)",
+    "url": "https://pl.spoj.com",
+    "country": "Poland",
+    "type": "spoj",
+    "tags": [
+      "spoj",
+      "pl"
+    ]
+  },
+  {
+    "name": "Exercism",
+    "url": "https://exercism.org",
+    "country": "Global",
+    "type": "mentored practice",
+    "tags": [
+      "mentored"
+    ]
+  },
+  {
+    "name": "AcWing (洛谷类似)",
+    "url": "https://www.acwing.com",
+    "country": "China",
+    "type": "training",
+    "tags": [
+      "cn",
+      "training"
+    ]
+  },
+  {
+    "name": "VJudge (multi-oj judge)",
+    "url": "https://vjudge.net",
+    "country": "Global",
+    "type": "multi-oj",
+    "tags": [
+      "aggregate",
+      "mirror"
+    ]
+  },
+  {
+    "name": "SPOJ Classical (classical problems)",
+    "url": "https://www.spoj.com/problems/classical/",
+    "country": "Global",
+    "type": "archive",
+    "tags": [
+      "classical"
+    ]
+  },
+  {
+    "name": "Codeforces Gym",
+    "url": "https://codeforces.com/gym",
+    "country": "Global",
+    "type": "gym",
+    "tags": [
+      "gym",
+      "contests"
+    ]
+  },
+  {
+    "name": "AtCoder Problems (archive)",
+    "url": "https://kenkoooo.com/atcoder/resources/",
+    "country": "Japan",
+    "type": "resources",
+    "tags": [
+      "atcoder"
+    ]
+  },
+  {
+    "name": "ICPC Archive",
+    "url": "https://onlinejudge.org/index.php?option=onlinejudge&page=show_problems",
+    "country": "Global",
+    "type": "archive",
+    "tags": [
+      "icpc"
+    ]
+  },
+  {
+    "name": "Timus (older mirror)",
+    "url": "https://timus.onlinejudge.org",
+    "country": "Russia",
+    "type": "mirror",
+    "tags": [
+      "mirror"
+    ]
+  },
+  {
+    "name": "SUSTech OJ (sustech)",
+    "url": "https://acm.sustech.edu.cn",
+    "country": "China",
+    "type": "university",
+    "tags": [
+      "university"
+    ]
+  },
+  {
+    "name": "ZJU OJ (ZOJ / HDU former mirror)",
+    "url": "https://uoj.ac",
+    "country": "China",
+    "type": "training",
+    "tags": [
+      "cn",
+      "training"
+    ]
+  },
+  {
+    "name": "POJ Mirror",
+    "url": "https://poj.org",
+    "country": "China",
+    "type": "archive",
+    "tags": [
+      "poj"
+    ]
+  },
+  {
+    "name": "Gymnasium (various)",
+    "url": "https://gymnasium.github.io",
+    "country": "Global",
+    "type": "learning",
+    "tags": [
+      "learning"
+    ]
+  },
+  {
+    "name": "SPOJ Classical (pl)",
+    "url": "https://pl.spoj.com/problems/",
+    "country": "Poland",
+    "type": "problems",
+    "tags": [
+      "spoj"
+    ]
+  },
+  {
+    "name": "LOJ (LightOJ) Problems",
+    "url": "https://lightoj.com/problem/list",
+    "country": "Global",
+    "type": "problems",
+    "tags": [
+      "lightoj"
+    ]
+  },
+  {
+    "name": "URI Online Judge (old)",
+    "url": "https://www.beecrowd.com.br/judge/en/",
+    "country": "Brazil",
+    "type": "archive",
+    "tags": [
+      "uri",
+      "beecrowd"
+    ]
+  },
+  {
+    "name": "Timus Problemset",
+    "url": "https://acm.timus.ru/problemset.aspx",
+    "country": "Russia",
+    "type": "problems",
+    "tags": [
+      "timus"
+    ]
+  },
+  {
+    "name": "SPOJ Brazil (br.spoj)",
+    "url": "https://br.spoj.com",
+    "country": "Brazil",
+    "type": "spoj",
+    "tags": [
+      "spoj",
+      "br"
+    ]
+  },
+  {
+    "name": "Juice (OJ aggregator)",
+    "url": "https://oj.uz",
+    "country": "Uzbekistan",
+    "type": "online judge",
+    "tags": [
+      "uz",
+      "archive"
+    ]
+  },
+  {
+    "name": "Polish SPOJ",
+    "url": "https://pl.spoj.com",
+    "country": "Poland",
+    "type": "archive",
+    "tags": [
+      "spoj"
+    ]
+  },
+  {
+    "name": "Codeforces EDU",
+    "url": "https://codeforces.com/edu",
+    "country": "Global",
+    "type": "courses",
+    "tags": [
+      "edu",
+      "courses"
+    ]
+  },
+  {
+    "name": "AlgoSpot",
+    "url": "https://algospot.com",
+    "country": "South Korea",
+    "type": "practice",
+    "tags": [
+      "algorithms",
+      "kr"
+    ]
+  },
+  {
+    "name": "Baekjoon Online Judge",
+    "url": "https://www.acmicpc.net",
+    "country": "South Korea",
+    "type": "online judge",
+    "tags": [
+      "acmicpc",
+      "baekjoon"
+    ]
+  },
+  {
+    "name": "SPOJ Vietnam (vn.spoj)",
+    "url": "https://vn.spoj.com",
+    "country": "Vietnam",
+    "type": "spoj",
+    "tags": [
+      "spoj",
+      "vn"
+    ]
+  },
+  {
+    "name": "HackerEarth Practice",
+    "url": "https://www.hackerearth.com/practice/",
+    "country": "Global",
+    "type": "practice",
+    "tags": [
+      "practice"
+    ]
+  },
+  {
+    "name": "Coderbyte",
+    "url": "https://www.coderbyte.com",
+    "country": "Global",
+    "type": "practice",
+    "tags": [
+      "interview",
+      "practice"
+    ]
+  },
+  {
+    "name": "CodeSignal (Arcade)",
+    "url": "https://codesignal.com",
+    "country": "Global",
+    "type": "interview",
+    "tags": [
+      "interview"
+    ]
+  },
+  {
+    "name": "Edabit",
+    "url": "https://edabit.com",
+    "country": "Global",
+    "type": "practice",
+    "tags": [
+      "beginner"
+    ]
+  },
+  {
+    "name": "SPOJ Hungary (hun.spoj)",
+    "url": "https://hun.spoj.com",
+    "country": "Hungary",
+    "type": "spoj",
+    "tags": [
+      "spoj"
+    ]
+  },
+  {
+    "name": "Open Kattis (public)",
+    "url": "https://open.kattis.com/problems",
+    "country": "Global",
+    "type": "problems",
+    "tags": [
+      "kattis"
+    ]
+  },
+  {
+    "name": "Codeforces Mirror (mirror)",
+    "url": "https://m1.codeforces.com",
+    "country": "Global",
+    "type": "mirror",
+    "tags": [
+      "mirror"
+    ]
+  },
+  {
+    "name": "Google Coding Competitions (archive)",
+    "url": "https://codingcompetitions.withgoogle.com",
+    "country": "Global",
+    "type": "archive",
+    "tags": [
+      "google",
+      "archive"
+    ]
+  },
+  {
+    "name": "Meta Hacker Cup (archive)",
+    "url": "https://www.facebook.com/codingcompetitions",
+    "country": "Global",
+    "type": "archive",
+    "tags": [
+      "meta"
+    ]
+  },
+  {
+    "name": "Advent of Code",
+    "url": "https://adventofcode.com",
+    "country": "Global",
+    "type": "seasonal",
+    "tags": [
+      "puzzles"
+    ]
+  },
+  {
+    "name": "Project Nayuki (algorithms)",
+    "url": "https://www.nayuki.io",
+    "country": "Global",
+    "type": "algorithms",
+    "tags": [
+      "resources"
+    ]
+  },
+  {
+    "name": "SPOJ Argentina (ar.spoj)",
+    "url": "https://ar.spoj.com",
+    "country": "Argentina",
+    "type": "spoj",
+    "tags": [
+      "spoj"
+    ]
+  },
+  {
+    "name": "Sphere Engine (SPOJ backend)",
+    "url": "https://sphere-engine.com",
+    "country": "Poland",
+    "type": "platform",
+    "tags": [
+      "engine"
+    ]
+  },
+  {
+    "name": "Aizu Online Judge",
+    "url": "https://onlinejudge.u-aizu.ac.jp",
+    "country": "Japan",
+    "type": "online judge",
+    "tags": [
+      "aizu"
+    ]
+  },
+  {
+    "name": "Peking University Judge (PKU)",
+    "url": "https://acm.pku.edu.cn",
+    "country": "China",
+    "type": "university",
+    "tags": [
+      "pku"
+    ]
+  },
+  {
+    "name": "UVALive (older mirror)",
+    "url": "https://onlinejudge.org",
+    "country": "Global",
+    "type": "archive",
+    "tags": [
+      "uva"
+    ]
+  },
+  {
+    "name": "SPOJ India",
+    "url": "https://in.spoj.com",
+    "country": "India",
+    "type": "spoj",
+    "tags": [
+      "spoj",
+      "in"
+    ]
+  },
+  {
+    "name": "Timus (ru)",
+    "url": "https://acm.timus.ru",
+    "country": "Russia",
+    "type": "problems",
+    "tags": [
+      "timus"
+    ]
+  },
+  {
+    "name": "Gym - Codeforces (contests)",
+    "url": "https://codeforces.com/gym",
+    "country": "Global",
+    "type": "gym",
+    "tags": [
+      "gym"
+    ]
+  },
+  {
+    "name": "LibreOJ",
+    "url": "https://loj.ac",
+    "country": "China",
+    "type": "oj mirror",
+    "tags": [
+      "loj",
+      "mirror"
+    ]
+  },
+  {
+    "name": "NowCoder Contest",
+    "url": "https://ac.nowcoder.com",
+    "country": "China",
+    "type": "contests",
+    "tags": [
+      "cn",
+      "contests"
+    ]
+  },
+  {
+    "name": "SPOJ Australia",
+    "url": "https://au.spoj.com",
+    "country": "Australia",
+    "type": "spoj",
+    "tags": [
+      "spoj",
+      "au"
+    ]
+  },
+  {
+    "name": "Codeforces 'Problemset'",
+    "url": "https://codeforces.com/problemset",
+    "country": "Global",
+    "type": "problems",
+    "tags": [
+      "problemset"
+    ]
+  },
+  {
+    "name": "HackerRank Contests",
+    "url": "https://www.hackerrank.com/contests",
+    "country": "Global",
+    "type": "contests",
+    "tags": [
+      "contests"
+    ]
+  },
+  {
+    "name": "LeetCode Contest",
+    "url": "https://leetcode.com/contest",
+    "country": "Global",
+    "type": "contests",
+    "tags": [
+      "contests"
+    ]
+  },
+  {
+    "name": "AtCoder Beginner Contest (ABC)",
+    "url": "https://atcoder.jp/contests/abc",
+    "country": "Japan",
+    "type": "contests",
+    "tags": [
+      "abc"
+    ]
+  },
+  {
+    "name": "AtCoder Regular Contest (ARC)",
+    "url": "https://atcoder.jp/contests/arc",
+    "country": "Japan",
+    "type": "contests",
+    "tags": [
+      "arc"
+    ]
+  },
+  {
+    "name": "Codeforces 'Gym' list",
+    "url": "https://codeforces.com/gyms",
+    "country": "Global",
+    "type": "gyms",
+    "tags": [
+      "gym"
+    ]
+  },
+  {
+    "name": "PKU JudgeOnline (mirror)",
+    "url": "http://acm.pku.edu.cn/JudgeOnline",
+    "country": "China",
+    "type": "mirror",
+    "tags": [
+      "pku"
+    ]
+  },
+  {
+    "name": "SPOJ 'challenge' problems",
+    "url": "https://www.spoj.com/challenges/",
+    "country": "Global",
+    "type": "challenges",
+    "tags": [
+      "challenge"
+    ]
+  },
+  {
+    "name": "OmegaUp (Mexican OJ)",
+    "url": "https://omegaup.com",
+    "country": "Mexico",
+    "type": "online judge",
+    "tags": [
+      "omegaup"
+    ]
+  },
+  {
+    "name": "Timus - Problemset",
+    "url": "https://acm.timus.ru/problemset.aspx?space=1",
+    "country": "Russia",
+    "type": "problems",
+    "tags": [
+      "timus"
+    ]
+  },
+  {
+    "name": "ICPC official site",
+    "url": "https://icpc.global",
+    "country": "Global",
+    "type": "organization",
+    "tags": [
+      "icpc"
+    ]
+  },
+  {
+    "name": "LibreOJ 'problems'",
+    "url": "https://loj.ac/problem/list",
+    "country": "China",
+    "type": "problems",
+    "tags": [
+      "loj"
+    ]
+  },
+  {
+    "name": "Luogu Problemset",
+    "url": "https://www.luogu.com.cn/problem/list",
+    "country": "China",
+    "type": "problems",
+    "tags": [
+      "cn",
+      "luogu"
+    ]
+  },
+  {
+    "name": "HDU Problemset",
+    "url": "https://acm.hdu.edu.cn/listproblem.php",
+    "country": "China",
+    "type": "problems",
+    "tags": [
+      "hdu"
+    ]
+  },
+  {
+    "name": "POJ Problemset",
+    "url": "http://poj.org/problemset",
+    "country": "China",
+    "type": "problems",
+    "tags": [
+      "poj"
+    ]
+  },
+  {
+    "name": "SPOJ 'classical' list",
+    "url": "https://www.spoj.com/problems/classical/",
+    "country": "Global",
+    "type": "problems",
+    "tags": [
+      "classical"
+    ]
+  },
+  {
+    "name": "Timus 'archive' problems",
+    "url": "https://acm.timus.ru/problemset.aspx",
+    "country": "Russia",
+    "type": "problems",
+    "tags": [
+      "timus"
+    ]
+  },
+  {
+    "name": "Beecrowd Problemset",
+    "url": "https://www.beecrowd.com.br/judge/en/problems",
+    "country": "Brazil",
+    "type": "problems",
+    "tags": [
+      "beecrowd"
+    ]
+  },
+  {
+    "name": "Codeforces 'Groups'",
+    "url": "https://codeforces.com/groups",
+    "country": "Global",
+    "type": "groups",
+    "tags": [
+      "community"
+    ]
+  },
+  {
+    "name": "SPOJ 'submit'",
+    "url": "https://www.spoj.com/submit/",
+    "country": "Global",
+    "type": "submit",
+    "tags": [
+      "submit"
+    ]
+  },
+  {
+    "name": "AtCoder 'problemset'",
+    "url": "https://atcoder.jp/contests/archive",
+    "country": "Japan",
+    "type": "archive",
+    "tags": [
+      "atcoder"
+    ]
+  },
+  {
+    "name": "Luogu LJudger Mirror",
+    "url": "https://www.luogu.com.cn",
+    "country": "China",
+    "type": "mirror",
+    "tags": [
+      "luogu"
+    ]
+  },
+  {
+    "name": "CS Academy Problems",
+    "url": "https://csacademy.com/contest/archive/",
+    "country": "Global",
+    "type": "archive",
+    "tags": [
+      "csacademy"
+    ]
+  },
+  {
+    "name": "SPOJ 'ranks'",
+    "url": "https://www.spoj.com/ranks/",
+    "country": "Global",
+    "type": "ranks",
+    "tags": [
+      "spoj"
+    ]
+  },
+  {
+    "name": "Timus 'submit'",
+    "url": "https://acm.timus.ru/submit.aspx",
+    "country": "Russia",
+    "type": "submit",
+    "tags": [
+      "timus"
+    ]
+  },
+  {
+    "name": "A2OJ (Codeforces ladders mirror)",
+    "url": "https://a2oj.com",
+    "country": "Global",
+    "type": "ladders",
+    "tags": [
+      "ladders",
+      "archive"
+    ]
+  },
+  {
+    "name": "Gymnastics (contest mirrors)",
+    "url": "https://gym.open.kattis.com",
+    "country": "Global",
+    "type": "gym",
+    "tags": [
+      "kattis"
+    ]
+  },
+  {
+    "name": "Codeforces 'blog'",
+    "url": "https://codeforces.com/blog",
+    "country": "Global",
+    "type": "community",
+    "tags": [
+      "blog"
+    ]
+  },
+  {
+    "name": "AtCoder 'practice'",
+    "url": "https://atcoder.jp/contests/practice",
+    "country": "Japan",
+    "type": "practice",
+    "tags": [
+      "practice"
+    ]
+  },
+  {
+    "name": "Luogu - LST (training)",
+    "url": "https://www.luogu.com.cn/",
+    "country": "China",
+    "type": "training",
+    "tags": [
+      "training"
+    ]
+  },
+  {
+    "name": "ACM Online Judge (general)",
+    "url": "https://onlinejudge.org",
+    "country": "Global",
+    "type": "archive",
+    "tags": [
+      "acm"
+    ]
+  },
+  {
+    "name": "POJ 'rank'",
+    "url": "http://poj.org/ranklist",
+    "country": "China",
+    "type": "ranks",
+    "tags": [
+      "poj"
+    ]
+  },
+  {
+    "name": "HDU 'rank'",
+    "url": "https://acm.hdu.edu.cn/ranklist.php",
+    "country": "China",
+    "type": "ranks",
+    "tags": [
+      "hdu"
+    ]
+  },
+  {
+    "name": "Luogu 'contest'",
+    "url": "https://www.luogu.com.cn/contest",
+    "country": "China",
+    "type": "contests",
+    "tags": [
+      "contests"
+    ]
+  },
+  {
+    "name": "NowCoder 'discuss'",
+    "url": "https://www.nowcoder.com/discuss",
+    "country": "China",
+    "type": "community",
+    "tags": [
+      "cn",
+      "discuss"
+    ]
+  },
+  {
+    "name": "Codeforces 'ratings'",
+    "url": "https://codeforces.com/ratings",
+    "country": "Global",
+    "type": "ratings",
+    "tags": [
+      "ratings"
+    ]
+  },
+  {
+    "name": "SPOJ 'forum'",
+    "url": "https://www.spoj.com/forum/",
+    "country": "Global",
+    "type": "forum",
+    "tags": [
+      "forum"
+    ]
+  },
+  {
+    "name": "HackerRank 'practice'",
+    "url": "https://www.hackerrank.com/domains",
+    "country": "Global",
+    "type": "practice",
+    "tags": [
+      "practice"
+    ]
+  },
+  {
+    "name": "LeetCode 'problems'",
+    "url": "https://leetcode.com/problemset/all/",
+    "country": "Global",
+    "type": "problems",
+    "tags": [
+      "problems"
+    ]
+  },
+  {
+    "name": "核桃OJ (请填入 URL)",
+    "url": "",
+    "country": "—",
+    "type": "自建/待填",
+    "tags": [
+      "请替换为真实URL"
+    ]
+  }
+]

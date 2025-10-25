@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>OJ 跳转总览</title>
+<link rel="icon" href="1.png" />
+<style>
+  :root{--bg:#f7fbff;--card:#ffffff;--muted:#6b7280;--accent:#0ea5a4;}
+  body{font-family:Inter, "Helvetica Neue", Arial, "Noto Sans SC", system-ui, -apple-system; background:var(--bg); margin:0; color:#0f172a}
+  header{display:flex;gap:12px;align-items:center;padding:20px 28px;background:linear-gradient(90deg,#ffffffcc, #f0f9ff);box-shadow:0 1px 0 rgba(15,23,42,0.04)}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand img{width:44px;height:44px;border-radius:8px}
+  .brand h1{margin:0;font-size:18px}
+  .controls{margin-left:auto;display:flex;gap:8px;align-items:center}
+  .search{padding:8px 12px;border-radius:8px;border:1px solid #e6eef6;min-width:240px;background:white}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;padding:18px}
+  .card{background:var(--card);padding:12px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.04);display:flex;flex-direction:column;gap:8px}
+  .card a{font-weight:600;color:#0f172a;text-decoration:none}
+  .meta{font-size:13px;color:var(--muted)}
+  footer{padding:18px;text-align:center;color:var(--muted);font-size:13px}
+  .tag{display:inline-block;padding:4px 8px;border-radius:999px;background:#f0f9ff;color:#075985;font-size:12px;margin-right:6px}
+  .count{font-weight:700;color:var(--accent)}
+  .status-pill{padding:8px 12px;border-radius:8px;background:#eef2ff;color:#3730a3;min-width:88px;text-align:center}
+  .btn{padding:8px 12px;border-radius:8px;border:1px solid #e6eef6;background:white;cursor:pointer}
+  .hint{font-size:13px;color:var(--muted);margin-top:8px}
+  .controls .small{font-size:13px;color:var(--muted)}
+  @media (max-width:600px){.controls{display:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <img src="1.png" alt="icon" />
+    <div>
+      <h1>OJ 跳转总览</h1>
+      <div style="font-size:13px;color:var(--muted)">从外部 <code>oj_list.json</code> 自动加载 · 可筛选 · 点击在新标签打开</div>
+    </div>
+  </div>
+  <div class="controls">
+    <input id="q" class="search" placeholder="搜索 OJ 名称 / 国家 / 标签 (例如: China, training, university)" />
+    <div id="status" class="status-pill">加载失败</div>
+  </div>
+</header>
+
+<main id="main">
+  <div style="padding:16px 18px;display:flex;gap:12px;align-items:center;">
+    <div>已加载 <span id="total" class="count">0</span> 个 OJ</div>
+    <div style="color:var(--muted);font-size:13px">（数据来自同文件夹下的 <code>oj_list.json</code> — 更新后刷新页面即可）</div>
+  </div>
+
+  <div style="padding:0 18px 12px 18px;">
+    <div id="fallback" style="display:none;margin-bottom:12px;">
+      <div style="display:flex;gap:8px;align-items:center">
+        <label for="file-input" class="btn" title="选择本地 oj_list.json">从本地选择 oj_list.json</label>
+        <input id="file-input" type="file" accept=".json,application/json" style="display:none" />
+        <button id="try-http" class="btn">在本地用 HTTP 服务器打开（推荐）</button>
+      </div>
+      <div class="hint" id="fallback-hint">
+        如果你通过 <code>file://</code> 打开页面，浏览器可能阻止了直接读取本地文件。点击“从本地选择”并选中你的 <code>oj_list.json</code> 文件即可加载数据；
+        或在项目目录运行 <code>python -m http.server 8000</code>（或 <code>npx http-server . -p 8000</code>），然后在浏览器打开 <code>http://localhost:8000/</code>。
+      </div>
+    </div>
+  </div>
+
+  <div id="grid" class="grid" aria-live="polite">
+    <div id="empty-msg" style="grid-column:1/-1;padding:18px;color:var(--muted);display:none;"></div>
+  </div>
+</main>
+
+<footer>生成器 · 由工具自动创建 · 如果需要更多条目或字段（logo、描述），把新的 JSON 放到同一目录并刷新。</footer>
+
+<script>
+// Render & search logic (unchanged)
+function render(list) {
+  const grid = document.getElementById('grid');
+  // keep the empty-msg element as the first child; remove old cards
+  Array.from(grid.querySelectorAll('.card')).forEach(n=>n.remove());
+  if (!list || !list.length) { return; }
+  for (const item of list) {
+    const card = document.createElement('div'); card.className = 'card';
+    const a = document.createElement('a'); a.href = item.url || '#'; a.target = '_blank'; a.rel='noreferrer noopener'; a.textContent = item.name;
+    const m = document.createElement('div'); m.className = 'meta'; m.textContent = (item.country ? item.country + ' · ' : '') + (item.type || '');
+    const tags = document.createElement('div');
+    if (item.tags && item.tags.length) {
+      for (const t of item.tags.slice(0,4)) {
+        const span = document.createElement('span'); span.className='tag'; span.textContent=t; tags.appendChild(span);
+      }
+    }
+    card.appendChild(a);
+    if (item.subtitle) {
+      const sub = document.createElement('div'); sub.style.color='var(--muted)'; sub.style.fontSize='13px'; sub.textContent=item.subtitle; card.appendChild(sub);
+    }
+    card.appendChild(m);
+    card.appendChild(tags);
+    grid.appendChild(card);
+  }
+}
+
+function fuzzyMatch(s, q){ return s.toLowerCase().includes(q.toLowerCase()); }
+
+document.getElementById('q').addEventListener('input', (e)=>{
+  const q = e.target.value.trim();
+  if (!q) { render(window.OJ_LIST || []); document.getElementById('total').textContent = (window.OJ_LIST||[]).length; return; }
+  const filtered = (window.OJ_LIST||[]).filter(it=>{
+    if (it.name && fuzzyMatch(it.name, q)) return true;
+    if (it.country && fuzzyMatch(it.country,q)) return true;
+    if (it.tags && it.tags.join(' ').toLowerCase().includes(q.toLowerCase())) return true;
+    if (it.url && it.url.toLowerCase().includes(q.toLowerCase())) return true;
+    if (it.subtitle && it.subtitle.toLowerCase().includes(q.toLowerCase())) return true;
+    return false;
+  });
+  document.getElementById('total').textContent = filtered.length;
+  render(filtered);
+});
+
+// Loading logic with graceful fallback to local file input when fetch fails (e.g., file://)
+async function load() {
+  const statusEl = document.getElementById('status');
+  statusEl.textContent = '加载中…';
+  try {
+    // Try fetch normally (works when served via HTTP)
+    const res = await fetch('oj_list.json?cachebust=' + Date.now());
+    if (!res.ok) throw new Error('HTTP error ' + res.status);
+    const list = await res.json();
+    window.OJ_LIST = list;
+    document.getElementById('total').textContent = list.length;
+    render(list);
+    statusEl.textContent = '已加载';
+    document.getElementById('empty-msg').style.display = list.length ? 'none' : 'block';
+    document.getElementById('empty-msg').textContent = list.length ? '' : '已加载 0 个 OJ — 请检查 oj_list.json 是否为空或格式错误。';
+    // hide fallback UI if it was shown
+    document.getElementById('fallback').style.display = 'none';
+  } catch (e) {
+    console.error('加载 oj_list.json 失败：', e);
+    statusEl.textContent = '加载失败';
+    document.getElementById('total').textContent = 0;
+    document.getElementById('empty-msg').style.display = 'block';
+    document.getElementById('empty-msg').textContent = '加载失败：无法读取 oj_list.json，确认该文件与 index.html 在同一目录，且为合法 JSON。';
+    // show fallback UI so user can pick a file or start an HTTP server
+    document.getElementById('fallback').style.display = 'block';
+  }
+}
+
+// File input fallback
+document.getElementById('file-input').addEventListener('change', function(ev) {
+  const f = ev.target.files && ev.target.files[0];
+  if (!f) return;
+  const reader = new FileReader();
+  reader.onload = function(evt) {
+    try {
+      const data = JSON.parse(evt.target.result);
+      window.OJ_LIST = data;
+      document.getElementById('total').textContent = data.length || 0;
+      document.getElementById('empty-msg').style.display = data && data.length ? 'none' : 'block';
+      document.getElementById('empty-msg').textContent = data && data.length ? '' : '已加载 0 个 OJ — 你选择的 JSON 为空或格式不对。';
+      render(data);
+      document.getElementById('status').textContent = '已加载 (本地文件)';
+      document.getElementById('fallback').style.display = 'none';
+    } catch (err) {
+      alert('解析 JSON 失败：请确认文件是合法的 oj_list.json');
+      console.error(err);
+    }
+  };
+  reader.readAsText(f, 'utf-8');
+});
+
+// Try opening HTTP server hints when user clicks the button
+document.getElementById('try-http').addEventListener('click', function() {
+  const hint = document.getElementById('fallback-hint');
+  hint.innerHTML = '在终端（命令提示符）进入本项目目录并运行其中之一：<br>' +
+    '<code>python -m http.server 8000</code> （Python 3）<br>' +
+    '或<br>' +
+    '<code>npx http-server . -p 8000</code>（需要 Node.js）<br>' +
+    '然后在浏览器中打开 <code>http://localhost:8000/</code>。';
+});
+
+// initial load attempt
+load();
+</script>
+</body>
+</html>
